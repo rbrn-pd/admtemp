@@ -13,7 +13,7 @@ jobs:
       uses: gsactions/commit-message-checker@v2
       with:
         pattern: '(?:build|docs|refactor|test|fix|perf|chore|feat)(?:\(\w+\))?:\s[a-z]{1,2}.+'
-        error: "The commit message must follow the commit messages guidelines"
+        error: "Your commits and PR title must follow the conventional commit guidelines"
         excludeDescription: 'true' # optional: this excludes the description body of a pull request
         excludeTitle: 'false' # optional: this excludes the title of a pull request
         checkAllCommitMessages: 'true' # optional: this checks all commits associated with a pull request
